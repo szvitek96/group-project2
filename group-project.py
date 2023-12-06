@@ -48,7 +48,7 @@ with open('/Users/Zapao/Desktop/USA_cars_datasets.csv', 'r', encoding = 'UTF -8'
     print(select_lower(10000))
     
 #1.(sorting) sort on the year of production asc
-def sort_name(name):
+def sort_year(name):
     with open('/Users/Zapao/Desktop/USA_cars_datasets.csv', 'r', encoding = 'UTF -8') as file:
         #file.readline()
         data = []
@@ -60,4 +60,4 @@ def sort_name(name):
                 if data[i][4] > data[j][4]:
                     data[i], data[j] = data[j], data[i]
     return data
-print(sort_name('/Users/Zapao/Desktop/USA_cars_datasets.csv')
+print(sort_year('/Users/Zapao/Desktop/USA_cars_datasets.csv')
